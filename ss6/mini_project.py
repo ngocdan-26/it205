@@ -18,10 +18,11 @@ while True:
         print("Đăng nhập thành công!")
         break
     else:
+        if cost == 3:
+            print( "Tài khoản đã bị khóa!")
+            break
         print("Mật khẩu sai, vui lòng nhập lại!")
-    if cost == 3:
-        print( "Tài khoản đã bị khóa!")
-        break
+    
 
 # câu 3:
 print("Câu 3: ")
