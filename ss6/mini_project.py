@@ -2,21 +2,18 @@
 print("Câu 1: ")
 price = int(input("nhập vào Đơn giá của một sản phẩm: "))
 quantity = int(input("nhập vào Số lượng mua: "))
-
 total = price * quantity
-
 if total >= 1000000:
     total = total - total * 0.1
-
 print(f"Số tiền cuối cùng khách phải thanh toán: {total}")
 
 # câu 2:
 print("Câu 2: ")
-password = 123456
+password = "123456"
 cost = 0
 while True:
     cost += 1
-    is_password = int(input("nhập mật khẩu: "))
+    is_password = input("nhập mật khẩu: ")
     if  password == is_password:
         print("Đăng nhập thành công!")
         break
