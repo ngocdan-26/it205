@@ -36,9 +36,9 @@ while True:
         print("Số lượng không hợp lệ, bỏ qua thùng này!")
     elif quantity > 0 :
         valid_packages += 1
+        total_product += quantity
     else:
         break
-    total_product += 1
     
 print(f"Tổng số thùng hàng hợp lệ đã đếm: {valid_packages}")
 print(f"Tổng số lượng sản phẩm thu được: {total_product}")
