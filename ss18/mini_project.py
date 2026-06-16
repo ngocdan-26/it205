@@ -62,7 +62,7 @@ def update_price(products_list):
     check_id = input("Nhập mã sản phẩm cần sửa giá: ").strip().upper()
     print("--- Cập nhật giá sản phẩm ---")
     for pro in products_list:
-        if check_id == pro["price"]:
+        if check_id == pro["id"]:
             print(f"Tìm thấy sản phẩm: {pro["name"]} (Giá hiện tại: {pro["price"]})")
             while True:
                 new_price = input("Nhập giá mới: ")
