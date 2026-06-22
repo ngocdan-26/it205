@@ -15,12 +15,12 @@ def show_devices(devices):
         print("\n--- HỆ THỐNG TRỐNG (Không có thiết bị nào) ---")
         return
     
-    print("\n" + "="*85)
+    print("\n" + "-"*85)
     print(f"{'Mã TB':<10} | {'Vị trí xưởng':<25} | {'Chỉ số cũ':<12} | {'Chỉ số mới':<12} | {'Trạng thái':<15}")
-    print("="*85)
+    print("-"*85)
     for dev in devices:
         print(f"{dev['id']:<10} | {dev['location']:<25} | {dev['old_index']:<12} | {dev['new_index']:<12} | {dev['status']:<15}")
-    print("="*85)
+    print("-"*85)
 
 
 def update_indices(devices):
@@ -124,13 +124,13 @@ def main():
     ]
     
     while True:
-        print("\n" + "="*15 + " SMART ENERGY MONITOR MENU " + "="*15)
+        print("\n" + "-"*15 + " SMART ENERGY MONITOR MENU " + "-"*15)
         print("1. Xem danh sách thiết bị giám sát hiện có")
         print("2. Cập nhật chỉ số điện tiêu thụ (Check-in số liệu)")
         print("3. Kích hoạt trạng thái cảnh báo quá tải")
         print("4. Tính tổng lượng điện & Chi phí năng lượng")
         print("5. Thoát chương trình")
-        print("="*57)
+        print("-"*57)
         
         try:
             choice = int(input("Mời chọn chức năng (1-5): ").strip())
